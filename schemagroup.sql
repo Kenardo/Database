@@ -31,6 +31,12 @@ primary key (gpostid)
 );
 
 create table comment(
+commentid int auto increment not null,
+content varchar(200),
+primary key(commentid)
+);
+
+create table profile(
 userid int,
 fname varchar(50),
 lname varchar(50),
@@ -41,3 +47,52 @@ primary key(userid),
 foreign key(userid) on update cascade on delete cascade
 );
 
+create table create_group(
+groupid int,
+userid int,
+date_created date,
+primary key(groupid)
+);
+
+create table add_to_group(
+groupid int,
+userid int,
+date_added date,
+primary key(groupid)
+);
+
+create table add_editors_group(
+groupid int,
+userid int,
+date_added date,
+primary key(groupid),
+);
+
+create table friend_of(
+userid int,
+type varchar(50),
+primary key(userid)
+);
+
+create table creates(
+userid int,
+postid int,
+date_created date,
+primary key(userid)
+);
+
+create table create_content(
+userid int,
+groupid int,
+gpostid int,
+date_created date,
+primary key(userid)
+);
+
+create table comment_on(
+userid int,
+postid int,
+commentid int,
+date_commented date,
+primary key(userid)
+);
