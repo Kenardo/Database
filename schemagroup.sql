@@ -1,6 +1,6 @@
 create table users(
 userid int auto_increment not null,
-user_status varchar(10),
+user_status varchar(100),
 reg_id int,
 password varchar(128) not null,
 primary key(userid)
