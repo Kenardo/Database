@@ -9,3 +9,6 @@ INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('i am getting m
 INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('woot','8','gestureme53');
 INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('helloworld','9','yummy12');
 INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('rihanna is awesome','10','hamburger20');
+
+/* dummy data for profile */
+INSERT INTO `profile`(`userid`,`fname`,`lname`,`email`,`profile_pic`,`dob`) VALUES ('1','akeem','nemphis','anemphis@gmail.com','img24042013.jpg','1990-01-25');
