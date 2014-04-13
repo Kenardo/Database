@@ -10,15 +10,14 @@
 <div class="container">
 
     <?php
-
+			$fullname = "Ric Stew";
 
 	?>
 	<h2 id= "websitetitle" class="text-muted">AARK book</h3>
 	<div class="jumbotron">
 		
 	    <img id="profilepic" src="profilepic/blank-person.png" />
-        <p><?
-				$fullname = "Ricardo Stewart"; ?></p>
+        <p id="uname"><?= $fullname ?></p>
 		<button type="button" id="logout" class="btn btn-default btn-lg">Logout</button>
         
 	</div>
@@ -27,14 +26,14 @@
       <div class="masthead">
         
         <ul class="nav nav-justified">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Post</a></li>
-          <li><a href="#">Group Post</a></li>
-		  <li><a href="#">Friends</a></li>
+          <li ><a href="home.php">Home</a></li>
+          <li><a href="profile.php">Profile</a></li>
+          <li><a href="post.php">Post</a></li>
+          <li><a href="gpost.php">Group Post</a></li>
+		  <li><a href="friends.php">Friends</a></li>
         </ul>
 	  </div>
 	  
-</div>
-</body>
-</html>	  
+
+
+	  
