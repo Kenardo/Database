@@ -68,7 +68,51 @@ INSERT INTO 'groups'( 'groupid','group_name') VALUES ('4', 'Underground');
 INSERT INTO 'groups'( 'groupid','group_name') VALUES ('5', 'Cutters');
 
 /*dummy data for comments */
-INSERT INTO 'comments'( 'commentid','content', 'comment_likes') VALUES ('1', 'Started from the bottom','');
+INSERT INTO 'comments'( 'commentid','content', 'comment_likes') VALUES ('1', 'awesome thing','1');
+INSERT INTO 'comments'( 'commentid','content', 'comment_likes') VALUES ('2', 'you the best','6');
+INSERT INTO 'comments'( 'commentid','content', 'comment_likes') VALUES ('3', 'love you to pieces','9');
+INSERT INTO 'comments'( 'commentid','content', 'comment_likes') VALUES ('4', 'hey','10');
+INSERT INTO 'comments'( 'commentid','content', 'comment_likes') VALUES ('5', 'Share stuff online','11');
+
+/*dummy data for post*/
+INSERT INTO 'post'( 'postid','title', 'post_type') VALUES ('1', 'child','image');
+INSERT INTO 'post'( 'postid','title', 'post_type') VALUES ('2', 'ye','text');
+INSERT INTO 'post'( 'postid','title', 'post_type') VALUES ('3', 'sumtimes','image');
+INSERT INTO 'post'( 'postid','title', 'post_type') VALUES ('4', 'Some ...','text');
+INSERT INTO 'post'( 'postid','title', 'post_type') VALUES ('5', 'lalalal','image');
+INSERT INTO 'post'( 'postid','title', 'post_type') VALUES ('6', 'idk about that','image');
+
+/*dummy data for post_content*/
+INSERT INTO 'post_content'( 'postid','image_path','text_body','post_like') VALUES ('1', 'Cut','stuff','5');
+INSERT INTO 'post_content'( 'postid','image_path','text_body','post_like') VALUES ('2', 'Chill','ye','9');
+INSERT INTO 'post_content'( 'postid','image_path','text_body','post_like') VALUES ('3', 'Curse','blah','10');
+INSERT INTO 'post_content'( 'postid','image_path','text_body','post_like') VALUES ('4', 'Clap','yaa','13');
+INSERT INTO 'post_content'( 'postid','image_path','text_body','post_like') VALUES ('5', 'php','lame','15');
+INSERT INTO 'post_content'( 'postid','image_path','text_body','post_like') VALUES ('6', 'smiley','emonji','0');
+
+/*dummy data group_post*/
+INSERT INTO 'group_post'( 'postid','title', 'post_type') VALUES ('1', 'child','image');
+INSERT INTO 'group_post'( 'postid','title', 'post_type') VALUES ('2', 'ye','text');
+INSERT INTO 'group_post'( 'postid','title', 'post_type') VALUES ('3', 'sumtimes','image');
+INSERT INTO 'group_post'( 'postid','title', 'post_type') VALUES ('4', 'Some ...','text');
+INSERT INTO 'group_post'( 'postid','title', 'post_type') VALUES ('5', 'lalalal','image');
+INSERT INTO 'group_post'( 'postid','title', 'post_type') VALUES ('6', 'idk about that','image');
+
+/*dummy data for gpost_content*/
+INSERT INTO 'gpost_content'( 'postid','image_path','text_body','post_like') VALUES ('1', 'Cut','stuff','5');
+INSERT INTO 'gpost_content'( 'postid','image_path','text_body','post_like') VALUES ('2', 'Chill','ye','9');
+INSERT INTO 'gpost_content'( 'postid','image_path','text_body','post_like') VALUES ('3', 'Curse','blah','10');
+INSERT INTO 'gpost_content'( 'postid','image_path','text_body','post_like') VALUES ('4', 'Clap','yaa','13');
+INSERT INTO 'gpost_content'( 'postid','image_path','text_body','post_like') VALUES ('5', 'php','lame','15');
+INSERT INTO 'gpost_content'( 'postid','image_path','text_body','post_like') VALUES ('6', 'smiley','emonji','0');
+
+/*dummy data for creates*/
+INSERT INTO 'creates'( 'userid','postid','date_created') VALUES ('1', '1','2003-12-02');
+INSERT INTO 'creates'( 'userid','postid','date_created') VALUES ('2', '2','2010-02-25');
+INSERT INTO 'creates'( 'userid','postid','date_created') VALUES ('3', '3','2013-15-23');
+INSERT INTO 'creates'( 'userid','postid','date_created') VALUES ('4', '4','2012-09-12');
+
+/*dummy data for comments_on*/
 
 
 
