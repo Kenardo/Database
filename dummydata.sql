@@ -113,7 +113,56 @@ INSERT INTO 'creates'( 'userid','postid','date_created') VALUES ('3', '3','2013-
 INSERT INTO 'creates'( 'userid','postid','date_created') VALUES ('4', '4','2012-09-12');
 
 /*dummy data for comments_on*/
+INSERT INTO 'comments_on'( 'userid','postid','commentid','date_commented') VALUES ('1', '1','1','2003-12-02');
+INSERT INTO 'comments_on'( 'userid','postid','commentid','date_commented') VALUES ('2', '2','2','2002-12-02');
+INSERT INTO 'comments_on'( 'userid','postid','commentid','date_commented') VALUES ('3', '3','3','2001-12-02');
+INSERT INTO 'comments_on'( 'userid','postid','commentid','date_commented') VALUES ('4', '4','4','2000-12-02');
 
+
+/*dummy data for friend_of*/
+INSERT INTO 'friend_of'( 'friend','friend_owner') VALUES ('1', '2');
+INSERT INTO 'friend_of'( 'friend','friend_owner') VALUES ('2', '1');
+INSERT INTO 'friend_of'( 'friend','friend_owner') VALUES ('1', '5');
+INSERT INTO 'friend_of'( 'friend','friend_owner') VALUES ('8', '7');
+INSERT INTO 'friend_of'( 'friend','friend_owner') VALUES ('10', '2');
+INSERT INTO 'friend_of'( 'friend','friend_owner') VALUES ('1', '10');
+INSERT INTO 'friend_of'( 'friend','friend_owner') VALUES ('4', '3');
+INSERT INTO 'friend_of'( 'friend','friend_owner') VALUES ('6', '7');
+INSERT INTO 'friend_of'( 'friend','friend_owner') VALUES ('2', '5');
+INSERT INTO 'friend_of'( 'friend','friend_owner') VALUES ('3', '2');
+
+/*dummy data for add_editors_group*/
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('1', '1','2003-12-02');
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('2', '2','2002-12-02');
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('3', '1','2000-12-02');
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('4', '7','2000-12-02');
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('5', '8','2010-12-02');
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('6', '10','2013-12-02');
+
+/*dummy data for add_to_group*/
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('1', '1','2003-12-02');
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('2', '10','2003-12-02');
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('3', '2','2003-12-02');
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('4', '7','2003-12-02');
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('5', '9','2003-12-02');
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('6', '3','2003-12-02');
+
+/*dummy data create_group*/
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('1', '1','2003-12-02');
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('2', '10','2003-12-02');
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('3', '2','2003-12-02');
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('4', '7','2003-12-02');
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('5', '9','2003-12-02');
+INSERT INTO 'add_editors_group'( 'groupid','userid','date_added') VALUES ('6', '3','2003-12-02');
+
+
+/*dummy data create_content*/
+INSERT INTO 'add_editors_group'('userid','groupid','gpostid','date_created') VALUES ('1','1', '1','2003-12-02');
+INSERT INTO 'add_editors_group'('userid','groupid','gpostid','date_created') VALUES ('2','2', '2','2003-12-02');
+INSERT INTO 'add_editors_group'('userid','groupid','gpostid','date_created') VALUES ('3','3', '3','2003-12-02');
+INSERT INTO 'add_editors_group'('userid','groupid','gpostid','date_created') VALUES ('4','4', '4','2003-12-02');
+INSERT INTO 'add_editors_group'('userid','groupid','gpostid','date_created') VALUES ('5','5', '5','2003-12-02');
+INSERT INTO 'add_editors_group'('userid','groupid','gpostid','date_created') VALUES ('6','6', '6','2003-12-02');
 
 
 /* dummy data for users table */
