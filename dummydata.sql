@@ -1,3 +1,77 @@
+/*dummy data for users*/
+INSERT INTO 'users'('userid', 'fname' ,  'lname') VALUES ('1', 'Cooper', 'Abigail');
+INSERT INTO 'users'('userid', 'fname' ,  'lname') VALUES ('2', 'Barrett', 'Ariel');
+INSERT INTO 'users'('userid', 'fname' ,  'lname') VALUES ('3', 'Johnson',  'Kemar');
+INSERT INTO 'users'('userid', 'fname' ,  'lname') VALUES ('4', 'Stewart', 'Ricardo');
+INSERT INTO 'users'('userid', 'fname' ,  'lname') VALUES ('5', 'Wynter', 'Christoffe');
+INSERT INTO 'users'('userid', 'fname' ,  'lname') VALUES ('6', 'Cooper', 'Duncan');
+INSERT INTO 'users'('userid', 'fname' ,  'lname') VALUES ('7', 'Lindo', 'Jessica');
+INSERT INTO 'users'('userid', 'fname' ,  'lname') VALUES ('8', 'Betty', 'Gabrielle');
+INSERT INTO 'users'('userid', 'fname' ,  'lname') VALUES ('9', 'Watson', 'Gabrielle');
+INSERT INTO 'users'('userid', 'fname' ,  'lname') VALUES ('10','Trump', 'Donald');
+
+
+/*dummy data for registration*/
+INSERT INTO 'registration'('reg_id', 'userid' ,  'password') VALUES ('1','1', 'yup');
+INSERT INTO 'registration'('reg_id', 'userid' ,  'password') VALUES ('2','2', 'something');
+INSERT INTO 'registration'('reg_id', 'userid' ,  'password') VALUES ('3','3', 'password');
+INSERT INTO 'registration'('reg_id', 'userid' ,  'password') VALUES ('4','4', 'yaaa');
+INSERT INTO 'registration'('reg_id', 'userid' ,  'password') VALUES ('5','5', 'heller');
+INSERT INTO 'registration'('reg_id', 'userid' ,  'password') VALUES ('6','6', 'bemine');
+INSERT INTO 'registration'('reg_id', 'userid' ,  'password') VALUES ('7','7', 'hateyou');
+INSERT INTO 'registration'('reg_id', 'userid' ,  'password') VALUES ('8','8', 'property');
+INSERT INTO 'registration'('reg_id', 'userid' ,  'password') VALUES ('9','9', 'jail');
+INSERT INTO 'registration'('reg_id', 'userid' ,  'password') VALUES ('10','10', 'mango');
+
+
+/*dummy data for users_info*/
+INSERT INTO 'users_info'( 'userid' ,  'dob') VALUES ('1', '1992-03-29');
+INSERT INTO 'users_info'( 'userid' ,  'dob') VALUES ('2', '1991-07-20');
+INSERT INTO 'users_info'( 'userid' ,  'dob') VALUES ('3', '1992-03-09');
+INSERT INTO 'users_info'( 'userid' ,  'dob') VALUES ('4', '1990-04-29');
+INSERT INTO 'users_info'( 'userid' ,  'dob') VALUES ('5', '1991-03-19');
+INSERT INTO 'users_info'( 'userid' ,  'dob') VALUES ('6', '1994-03-25');
+INSERT INTO 'users_info'( 'userid' ,  'dob') VALUES ('7', '1995-12-26');
+INSERT INTO 'users_info'( 'userid' ,  'dob') VALUES ('8', '1994-11-29');
+INSERT INTO 'users_info'( 'userid' ,  'dob') VALUES ('9', '1993-07-15');
+INSERT INTO 'users_info'( 'userid' ,  'dob') VALUES ('10', '1992-03-29');
+
+/* dummy data for users_contact*/
+INSERT INTO 'users_contact'( 'userid' ,  'email') VALUES ('1', 'ilike@hotmail.com');
+INSERT INTO 'users_contact'( 'userid' ,  'email') VALUES ('2', 'friends@gmail.com');
+INSERT INTO 'users_contact'( 'userid' ,  'email') VALUES ('3', 'myname@live.com');
+INSERT INTO 'users_contact'( 'userid' ,  'email') VALUES ('4', 'grandmascoat@yahoo.com');
+INSERT INTO 'users_contact'( 'userid' ,  'email') VALUES ('5', 'money@gmail.com');
+INSERT INTO 'users_contact'( 'userid' ,  'email') VALUES ('6', 'life@hotmail.com');
+INSERT INTO 'users_contact'( 'userid' ,  'email') VALUES ('7', 'dumb@live.com');
+INSERT INTO 'users_contact'( 'userid' ,  'email') VALUES ('8', 'wrong@yahoo.com');
+INSERT INTO 'users_contact'( 'userid' ,  'email') VALUES ('9', 'help@yahoo.com');
+INSERT INTO 'users_contact'( 'userid' ,  'email') VALUES ('10', 'suitandtie@gmail.com');
+
+/*dummy data for profile */
+INSERT INTO 'profile'( 'userid' ,  'user_status', 'profile_pic') VALUES ('1', 'i like love','lg');
+INSERT INTO 'profile'( 'userid' ,  'user_status', 'profile_pic') VALUES ('2', 'I dislike love','kl');
+INSERT INTO 'profile'( 'userid' ,  'user_status', 'profile_pic') VALUES ('3', 'Hunger','kl');
+INSERT INTO 'profile'( 'userid' ,  'user_status', 'profile_pic') VALUES ('4', 'movie time','kl');
+INSERT INTO 'profile'( 'userid' ,  'user_status', 'profile_pic') VALUES ('5', 'cheater','kl');
+INSERT INTO 'profile'( 'userid' ,  'user_status', 'profile_pic') VALUES ('6', 'upset','kl');
+INSERT INTO 'profile'( 'userid' ,  'user_status', 'profile_pic') VALUES ('7', 'sad','kl');
+INSERT INTO 'profile'( 'userid' ,  'user_status', 'profile_pic') VALUES ('8', 'not fair','kl');
+INSERT INTO 'profile'( 'userid' ,  'user_status', 'profile_pic') VALUES ('9', 'work','kl');
+INSERT INTO 'profile'( 'userid' ,  'user_status', 'profile_pic') VALUES ('10', 'over it','kl');
+
+/*dummy data for groups*/
+INSERT INTO 'groups'( 'groupid','group_name') VALUES ('1', 'Started from the bottom');
+INSERT INTO 'groups'( 'groupid','group_name') VALUES ('2', 'Rihanna Navy');
+INSERT INTO 'groups'( 'groupid','group_name') VALUES ('3', 'Beeeeyyyhive');
+INSERT INTO 'groups'( 'groupid','group_name') VALUES ('4', 'Underground');
+INSERT INTO 'groups'( 'groupid','group_name') VALUES ('5', 'Cutters');
+
+/*dummy data for comments */
+INSERT INTO 'comments'( 'commentid','content', 'comment_likes') VALUES ('1', 'Started from the bottom','');
+
+
+
 /* dummy data for users table */
 INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('i hate burger','1','abettor15');
 INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('i feel fat today','2','abnormalize67');
