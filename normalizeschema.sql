@@ -12,7 +12,7 @@ reg_id int auto_increment not null,
 userid int,
 password varchar(128) not null,
 primary key(reg_id),
-foreign key (userid) references users(userid)
+foreign key (userid) references users(userid) on update cascade on delete cascade
 );
 
 
