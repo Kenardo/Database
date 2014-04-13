@@ -66,6 +66,7 @@ INSERT INTO groups( groupid,group_name) VALUES ('2', 'Rihanna Navy');
 INSERT INTO groups( groupid,group_name) VALUES ('3', 'Beeeeyyyhive');
 INSERT INTO groups( groupid,group_name) VALUES ('4', 'Underground');
 INSERT INTO groups( groupid,group_name) VALUES ('5', 'Cutters');
+INSERT INTO groups( groupid,group_name) VALUES ('6', 'Moving On');
 
 /*dummy data for comments */
 INSERT INTO comments( commentid,content, comment_likes) VALUES ('1', 'awesome thing','1');
@@ -73,6 +74,7 @@ INSERT INTO comments( commentid,content, comment_likes) VALUES ('2', 'you the be
 INSERT INTO comments( commentid,content, comment_likes) VALUES ('3', 'love you to pieces','9');
 INSERT INTO comments( commentid,content, comment_likes) VALUES ('4', 'hey','10');
 INSERT INTO comments( commentid,content, comment_likes) VALUES ('5', 'Share stuff online','11');
+INSERT INTO comments( commentid,content, comment_likes) VALUES ('6', 'yes','21');
 
 /*dummy data for post*/
 INSERT INTO post( postid,title, post_type) VALUES ('1', 'child','image');
@@ -148,12 +150,12 @@ INSERT INTO add_to_group( groupid,userid,date_added) VALUES ('5', '9','2003-12-0
 INSERT INTO add_to_group( groupid,userid,date_added) VALUES ('6', '3','2003-12-02');
 
 /*dummy data create_group*/
-INSERT INTO create_group( groupid,userid,date_added) VALUES ('1', '1','2003-12-02');
-INSERT INTO create_group( groupid,userid,date_added) VALUES ('2', '10','2003-12-02');
-INSERT INTO create_group( groupid,userid,date_added) VALUES ('3', '2','2003-12-02');
-INSERT INTO create_group( groupid,userid,date_added) VALUES ('4', '7','2003-12-02');
-INSERT INTO create_group( groupid,userid,date_added) VALUES ('5', '9','2003-12-02');
-INSERT INTO create_group( groupid,userid,date_added) VALUES ('6', '3','2003-12-02');
+INSERT INTO create_group( groupid,userid,date_created) VALUES ('1', '1','2003-12-02');
+INSERT INTO create_group( groupid,userid,date_created) VALUES ('2', '10','2003-12-02');
+INSERT INTO create_group( groupid,userid,date_created) VALUES ('3', '2','2003-12-02');
+INSERT INTO create_group( groupid,userid,date_created) VALUES ('4', '7','2003-12-02');
+INSERT INTO create_group( groupid,userid,date_created) VALUES ('5', '9','2003-12-02');
+INSERT INTO create_group( groupid,userid,date_created) VALUES ('6', '3','2003-12-02');
 
 
 /*dummy data create_content*/
@@ -166,7 +168,7 @@ INSERT INTO create_content(userid,groupid,gpostid,date_created) VALUES ('6','6',
 
 
 /* dummy data for users table */
-INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('i hate burger','1','abettor15');
+/*INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('i hate burger','1','abettor15');
 INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('i feel fat today','2','abnormalize67');
 INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('i am bored','3','special45');
 INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('i need a wife','4','intent90');
@@ -175,7 +177,7 @@ INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('i am lonely','
 INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('i am getting married','7','hehelol43');
 INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('woot','8','gestureme53');
 INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('helloworld','9','yummy12');
-INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('rihanna is awesome','10','hamburger20');
+INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('rihanna is awesome','10','hamburger20');*/
 
-/* dummy data for profile */
-INSERT INTO `profile`(`userid`,`fname`,`lname`,`email`,`profile_pic`,`dob`) VALUES ('1','akeem','nemphis','anemphis@gmail.com','img24042013.jpg','1990-01-25');
+/* dummy data for profile */ 
+/*INSERT INTO `profile`(`userid`,`fname`,`lname`,`email`,`profile_pic`,`dob`) VALUES ('1','akeem','nemphis','anemphis@gmail.com','img24042013.jpg','1990-01-25');*/
