@@ -37,7 +37,7 @@ foreign key (userid) references users(userid) on update cascade on delete cascad
 
 create table groups(
 groupid int auto_increment not null,
-groupname varchar(50),a
+groupname varchar(50),
 primary key(groupid)
 );
 
@@ -69,6 +69,7 @@ postid int,
 primary key (userid, postid),
 foreign key (userid) references users(userid) on update cascade on delete cascade,
 foreign key (postid) references post(postid) on update cascade on delete cascade
+);
 
 create table post_content(
 postid int,
@@ -108,7 +109,7 @@ postid int,
 date_created date,
 primary key(userid),
 foreign key (userid) references users(userid) on update cascade on delete cascade,
-foreign key (postid) references posts(postid) on update cascade on delete cascade
+foreign key (postid) references post(postid) on update cascade on delete cascade
 );
 
 create table friend_of(
@@ -127,7 +128,7 @@ commentid int,
 date_commented date,
 primary key(userid, postid, commentid),
 foreign key (userid) references users(userid) on update cascade on delete cascade,
-foreign key (postid) references posts(postid) on update cascade on delete cascade
+foreign key (postid) references post(postid) on update cascade on delete cascade
 );
 
 create table add_editors_group(
@@ -165,5 +166,5 @@ date_created date,
 primary key(userid, groupid, gpostid),
 foreign key (userid) references users(userid) on update cascade on delete cascade,
 foreign key (groupid) references groups(groupid) on update cascade on delete cascade,
-foreign key (gpostid) references group_posts(gpostid) on update cascade on delete cascade
+foreign key (gpostid) references group_post(gpostid) on update cascade on delete cascade
 );
