@@ -1,5 +1,5 @@
 /*dummy data for users*/
-INSERT INTO users(userid, fname ,  lname) VALUES ('1', 'Cooper', 'Abigail');
+/* INSERT INTO users(userid, fname ,  lname) VALUES ('1', 'Cooper', 'Abigail');
 INSERT INTO users(userid, fname ,  lname) VALUES ('2', 'Barrett', 'Ariel');
 INSERT INTO users(userid, fname ,  lname) VALUES ('3', 'Johnson',  'Kemar');
 INSERT INTO users(userid, fname ,  lname) VALUES ('4', 'Stewart', 'Ricardo');
@@ -8,7 +8,22 @@ INSERT INTO users(userid, fname ,  lname) VALUES ('6', 'Cooper', 'Duncan');
 INSERT INTO users(userid, fname ,  lname) VALUES ('7', 'Lindo', 'Jessica');
 INSERT INTO users(userid, fname ,  lname) VALUES ('8', 'Betty', 'Gabrielle');
 INSERT INTO users(userid, fname ,  lname) VALUES ('9', 'Watson', 'Gabrielle');
-INSERT INTO users(userid, fname ,  lname) VALUES ('10','Trump', 'Donald');
+INSERT INTO users(userid, fname ,  lname) VALUES ('10','Trump', 'Donald'); */
+
+
+/* dummy data for users 
+password is md5('hello') = 5d41402abc4b2a76b9719d911017c592
+*/
+INSERT INTO users(userid, reg_id, password) VALUES ('1','1','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, reg_id, password) VALUES ('2','2','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, reg_id, password) VALUES ('3','3','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, reg_id, password) VALUES ('4','4','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, reg_id, password) VALUES ('5','5','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, reg_id, password) VALUES ('6','6','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, reg_id, password) VALUES ('7','7','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, reg_id, password) VALUES ('8','8','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, reg_id, password) VALUES ('9','9','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, reg_id, password) VALUES ('10','10','5d41402abc4b2a76b9719d911017c592');
 
 
 /*dummy data for registration*/

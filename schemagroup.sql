@@ -1,9 +1,42 @@
+create table registration(
+reg_id int auto_increment not null,
+userid int,
+joindate date,
+primary key (reg_id)
+);
+
 create table users(
 userid int auto_increment not null,
-user_status varchar(100),
-reg_id int,
-password varchar(128) not null,
+fname varchar(70),
+lname varchar(70),
+password varchar(128),
 primary key(userid)
+);
+
+create table users_info(
+userid int,
+dob date,
+primary key (userid),
+foreign key (userid) references users(userid) on update cascade on delete cascade
+);
+
+create table users_contact(
+userid int,
+email varchar(150),
+primary key (userid),
+foreign key (userid) references users(userid) on update cascade on delete cascade
+);
+
+create table profile(
+userid int,
+fname varchar(50),
+lname varchar(50),
+email varchar(100),
+profile_pic varchar(128),
+user_status varchar(100),
+dob date,
+primary key(userid),
+foreign key (userid) references users(userid) on update cascade on delete cascade
 );
 
 create table groups(
@@ -40,16 +73,6 @@ comment_likes int,
 primary key(commentid)
 );
 
-create table profile(
-userid int,
-fname varchar(50),
-lname varchar(50),
-email varchar(100),
-profile_pic varchar(128),
-dob date,
-primary key(userid),
-foreign key (userid) references users(userid) on update cascade on delete cascade
-);
 
 create table friend_of(
 friend int,
