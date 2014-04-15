@@ -28,8 +28,12 @@ include('query.php');
 				<p><?= $gpdatastore['g_post_type'] ?></p>
 				<p><?= $gpdatastore['g_image_path'] ?></p>
 				<p><?= $gpdatastore['text_body'] ?></p>
-				
-				<p><span class="glyphicon glyphicon-heart"></span><?= $gpdatastore['gpost_like'] ?></p>
+				<p><?= $gpdatastore['gpost_like'] ?></p>
+				<form>
+					<textarea name="comments" cols="20" rows="3">
+					</textarea>
+					<button type="submit" formmethod="post" formaction="">Comment</button>
+				</form>
 				</div>
 				<br />
 				<?php
@@ -55,7 +59,12 @@ include('query.php');
 				<p><?= $pdatastore['post_type'] ?></p>
 				<p><?= $pdatastore['image_path'] ?></p>
 				<p><?= $pdatastore['text_body'] ?></p>
-				<p><span class="glyphicon glyphicon-heart"></span><?= $pdatastore['post_like'] ?></p>
+				<p><?= $pdatastore['post_like'] ?></p>
+				<form>
+					<textarea name="comments" cols="20" rows="3">
+					</textarea>
+					<button type="submit" formmethod="post" formaction="">Comment</button>
+				</form>
 				</div>
 				<br />
 				<?php
