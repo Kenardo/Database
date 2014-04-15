@@ -22,7 +22,7 @@ include('query.php');
 				//echo "<p><?$gpdatastore['title']
 				//echo $gpdatastore['title'];
 				?>
-				<div class="gppostmaster">
+			
 				<div class="gpostbox">
 				<p id="gposttitle"> <?= $gpdatastore['title'] ?></p>
 				<p><?= $gpdatastore['g_post_type'] ?></p>
@@ -39,7 +39,27 @@ include('query.php');
         </div>
         <div class="col-lg-4">
           <h2>Post</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+           <?php
+			$temppost = mysql_query($postsql);
+			//$gpdatastore = mysql_fetch_assoc($tempgpost);
+		
+			while ($pdatastore = mysql_fetch_array($temppost))
+			{
+				//echo "<p><?$gpdatastore['title']
+				//echo $gpdatastore['title'];
+				?>
+			
+				<div class="gpostbox">
+				<p id="gposttitle"> <?= $pdatastore['title'] ?></p>
+				<p><?= $pdatastore['post_type'] ?></p>
+				<p><?= $pdatastore['image_path'] ?></p>
+				<p><?= $pdatastore['text_body'] ?></p>
+				<p><?= $pdatastore['post_like'] ?></p>
+				</div>
+				<br />
+				<?php
+			}
+		  ?>
           <p><a class="btn btn-primary" href="#" role="button">Comment &raquo;</a></p>
        </div>
         <!-- <div class="col-lg-4">
@@ -48,6 +68,7 @@ include('query.php');
           <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
         </div> -->
       </div>
+	  </div>
 </div>
 </body>
 </html>
