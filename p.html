@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="theme.css" rel="stylesheet">
+<link href="display.css" rel="stylesheet">
+
+<body>
+	<form name ="input" action ="" method = "get">
+
+		Post Title: <input type = "text" name = "g_title" >
+		</br>
+		</br>
+		
+		Text : <textarea Name = "textbox" rows = 2 cols =30>
+		
+		</textarea>
+	</form>
+
+	<form id= "image">
+	<input onclick = "textfield()"  type = "radio" name = "type" value ="image">Image</br>
+	</form>
+	
+	<script>
+		function textfield()
+			{
+				document.getElementById("image").innerHTML= <form><input type = "text" name = "imag_path" ></form>;
+			}
+	</script>
+	
+
+<input type ="radio" onclick="myFunction()">Image</input>
+
+	</script>
+	
+	
+</br>
+<input type = "submit" value ="Submit">
+
+
+</body>
+</html>
