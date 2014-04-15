@@ -60,6 +60,7 @@ primary key (postid)
 create table post_likes(
 userid int,
 postid int,
+text_body varchar(250),
 primary key (userid, postid),
 foreign key (userid) references users(userid) on update cascade on delete cascade,
 foreign key (postid) references post(postid) on update cascade on delete cascade
@@ -68,7 +69,6 @@ foreign key (postid) references post(postid) on update cascade on delete cascade
 create table post_content(
 postid int,
 image_path varchar(128),
-text_body varchar(250),
 post_like int,
 primary key (postid),
 foreign key (postid) references post(postid) on update cascade on delete cascade
@@ -78,6 +78,7 @@ create table group_post(
 gpostid int auto_increment not null,
 groupid int,
 title varchar(128),
+text_body varchar(250),
 g_post_type varchar(50),
 primary key (gpostid),
 foreign key (groupid) references groups(groupid) on update cascade on delete cascade
@@ -86,7 +87,6 @@ foreign key (groupid) references groups(groupid) on update cascade on delete cas
 create table gpost_content(
 gpostid int,
 g_image_path varchar(128),
-text_body varchar(250),
 gpost_like int,
 primary key (gpostid),
 foreign key (gpostid) references group_post(gpostid) on update cascade on delete cascade
