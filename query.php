@@ -1,5 +1,5 @@
 <?php
-include ('config.php');
+
 
 $gpostsql = "SELECT gp.gpostid,title, g_post_type, g_image_path, text_body, gpost_like  from group_post AS gp JOIN gpost_content AS gpc ON gp.gpostid=gpc.gpostid";
 
