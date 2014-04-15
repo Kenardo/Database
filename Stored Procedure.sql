@@ -1,7 +1,7 @@
 DELIMITER //
 CREATE PROCEDURE GetAge(IN ID integer)
 BEGIN
-SELECT DATEDIFF(now(),date(dob))/365 AS ageInYears
+SELECT Floor(DATEDIFF(now(),date(dob))/365) AS ageInYears
 FROM users_info WHERE users_info.userid = ID;
 END //
 DELIMITER ;
@@ -37,4 +37,4 @@ BEGIN
 SELECT COUNT(friend) FROM friend_of WHERE friend_of.friend_owner = ID;
 END //
 DELIMITER ;
-/*Call GetFriendCount(userid)*/
+/*Call GetFriendCount(friend_owner-userid)*/
