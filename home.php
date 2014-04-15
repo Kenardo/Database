@@ -24,9 +24,17 @@ include('query.php');
 				?>
 			
 				<div class="gpostbox">
-				<p id="gposttitle"> <?= $gpdatastore['title'] ?></p>
-				<p><?= $gpdatastore['g_post_type'] ?></p>
-				<p><?= $gpdatastore['g_image_path'] ?></p>
+				<p id="gposttitle"> <?= $gpdatastore['title'] ?></p>	
+				<?php
+					if(strlen($gpdatastore['g_image_path']) == 0)
+					{
+					}
+					else {
+						$imgp = $gpdatastore['g_image_path'];
+						echo "<p><img id=\"gppic\" src=\"$imgp\" alt=\"gppic/default.jpg\"/> </p> ";
+					}
+				?>
+				
 				<p><?= $gpdatastore['text_body'] ?></p>
 				<p><span class="glyphicon glyphicon-heart"></span>&nbsp;<?= $gpdatastore['gpost_like'] ?></p>
 				<form>
@@ -56,7 +64,15 @@ include('query.php');
 				<div class="gpostbox">
 				<p id="gposttitle"> <?= $pdatastore['title'] ?></p>
 				<p><?= $pdatastore['post_type'] ?></p>
-				<p><?= $pdatastore['image_path'] ?></p>
+				<?php
+					if(strlen($pdatastore['image_path']) == 0)
+					{
+					}
+					else {
+						$imgp = $pdatastore['image_path'];
+						echo "<p><img id=\"gppic\" src=\"$imgp\" alt=\"gppic/default.jpg\"/> </p> ";
+					}
+				?>
 				<p><?= $pdatastore['text_body'] ?></p>
 				<p><span class="glyphicon glyphicon-heart"></span>&nbsp;<?= $pdatastore['post_like'] ?></p>
 				<form>
