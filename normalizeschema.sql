@@ -124,7 +124,8 @@ commentid int,
 date_commented date,
 primary key(userid, postid, commentid),
 foreign key (userid) references users(userid) on update cascade on delete cascade,
-foreign key (postid) references post(postid) on update cascade on delete cascade
+foreign key (postid) references post(postid) on update cascade on delete cascade,
+foreign key (commentid) references comments(commentid) on update cascade on delete cascade
 );
 
 create table comments_on_gpost(
@@ -133,8 +134,9 @@ gpostid int,
 commentid int,
 date_commented date,
 primary key(userid, gpostid, commentid),
-foreign key(userid) references
-
+foreign key(userid) references users(userid) on update cascade on delete cascade,
+foreign key(gpostid) references group_post(gpostid) on update cascade on delete cascade,
+foreign key(commentid) references comments(commentid) on update cascade on delete cascade
 );
 
 create table add_editors_group(
