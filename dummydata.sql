@@ -67,6 +67,15 @@ INSERT INTO comments( commentid,content, comment_likes) VALUES ('4', 'hey','10')
 INSERT INTO comments( commentid,content, comment_likes) VALUES ('5', 'Share stuff online','11');
 INSERT INTO comments( commentid,content, comment_likes) VALUES ('6', 'yes','21');
 
+/* dummy data for comment likes */
+INSERT INTO comment_likes( commentid, userid ) VALUES ('1','6');
+INSERT INTO comment_likes( commentid, userid ) VALUES ('2','5');
+INSERT INTO comment_likes( commentid, userid ) VALUES ('3','4');
+INSERT INTO comment_likes( commentid, userid ) VALUES ('4','3');
+INSERT INTO comment_likes( commentid, userid ) VALUES ('5','2');
+INSERT INTO comment_likes( commentid, userid ) VALUES ('6','1');
+
+
 /*dummy data for post*/
 INSERT INTO post( postid,title, post_type) VALUES ('1', 'child','image');
 INSERT INTO post( postid,title, post_type) VALUES ('2', 'ye','text');
@@ -74,6 +83,14 @@ INSERT INTO post( postid,title, post_type) VALUES ('3', 'sumtimes','image');
 INSERT INTO post( postid,title, post_type) VALUES ('4', 'Some ...','text');
 INSERT INTO post( postid,title, post_type) VALUES ('5', 'lalalal','image');
 INSERT INTO post( postid,title, post_type) VALUES ('6', 'idk about that','image');
+
+/* dummy data for post likes */
+INSERT INTO post_likes( userid, postid) VALUES ('1','5');
+INSERT INTO post_likes( userid, postid) VALUES ('4','1');
+INSERT INTO post_likes( userid, postid) VALUES ('5','4');
+INSERT INTO post_likes( userid, postid) VALUES ('2','6');
+INSERT INTO post_likes( userid, postid) VALUES ('3','2');
+INSERT INTO post_likes( userid, postid) VALUES ('6','3');
 
 /*dummy data for post_content*/
 INSERT INTO post_content( postid,image_path,text_body,post_like) VALUES ('1', 'Cut','stuff','5');
@@ -98,6 +115,14 @@ INSERT INTO gpost_content( gpostid,text_body,gpost_like) VALUES ('3', 'blah','10
 INSERT INTO gpost_content( gpostid,text_body,gpost_like) VALUES ('4', 'yaa','13');
 INSERT INTO gpost_content( gpostid,text_body,gpost_like) VALUES ('5', 'lame','15');
 INSERT INTO gpost_content( gpostid,text_body,gpost_like) VALUES ('6', 'emonji','0');
+
+/* dummy data for gpost likes */
+INSERT INTO gpost_likes (userid, gpostid) VALUES ('10','1');
+INSERT INTO gpost_likes (userid, gpostid) VALUES ('8','2');
+INSERT INTO gpost_likes (userid, gpostid) VALUES ('6','6');
+INSERT INTO gpost_likes (userid, gpostid) VALUES ('4','3');
+INSERT INTO gpost_likes (userid, gpostid) VALUES ('2','4');
+INSERT INTO gpost_likes (userid, gpostid) VALUES ('1','5');
 
 /*dummy data for creates*/
 INSERT INTO creates( userid,postid,date_created) VALUES ('1', '1','2003-12-02');
@@ -158,17 +183,3 @@ INSERT INTO create_content(userid,groupid,gpostid,date_created) VALUES ('5','5',
 INSERT INTO create_content(userid,groupid,gpostid,date_created) VALUES ('6','6', '6','2003-12-02');
 
 
-/* dummy data for users table */
-/*INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('i hate burger','1','abettor15');
-INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('i feel fat today','2','abnormalize67');
-INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('i am bored','3','special45');
-INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('i need a wife','4','intent90');
-INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('i am sick','5','helloworld10');
-INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('i am lonely','6','thisisme86');
-INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('i am getting married','7','hehelol43');
-INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('woot','8','gestureme53');
-INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('helloworld','9','yummy12');
-INSERT INTO `users`(`user_status`, `reg_id`, `password`) VALUES ('rihanna is awesome','10','hamburger20');*/
-
-/* dummy data for profile */ 
-/*INSERT INTO `profile`(`userid`,`fname`,`lname`,`email`,`profile_pic`,`dob`) VALUES ('1','akeem','nemphis','anemphis@gmail.com','img24042013.jpg','1990-01-25');*/
