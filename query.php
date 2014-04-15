@@ -3,7 +3,7 @@
 
 $gpostsql = "SELECT gp.gpostid,title, g_post_type, g_image_path, text_body, gpost_like  from group_post AS gp JOIN gpost_content AS gpc ON gp.gpostid=gpc.gpostid";
 
-
+/*
 $uid=1;
 $name = "SELECT fname, lname FROM users  WHERE userid='$uid'";
 $nresult = mysql_query($name) or die("Query failed" . mysql_error());
@@ -33,5 +33,10 @@ while($arow = mysql_fetch_array($aresult))
 	echo $arow['fname']." ".$arow['lname'];
 	echo "<br>";
 }"
+*/
 
+$friendsql = "SELECT fname, lname from users WHERE userid IN (SELECT friend FROM friend_of WHERE friend_owner=$_SESSION['userid'])";
+$usercountsql = "SELECT COUNT(userid) FROM users";
+$commentsql = "SELECT content from comments where commentid IN (SELECT commentid FROM comments_on WHERE userid=$_SESSION['userid'])";
+$postsql = "";
 ?>
