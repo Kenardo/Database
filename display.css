@@ -1,3 +1,14 @@
+p#gposttitle {
+	font-size: 14pt;
+	
+
+}
+
+
+div.gpostbox {
+	border: 1px solid blue;
+	
+}
 
 body {
 	font-family: Tahoma;
