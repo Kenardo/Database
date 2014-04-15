@@ -27,15 +27,15 @@ INSERT INTO users(userid, fname, lname, password) VALUES ('10','Megan','Lindo','
 
 
 /*dummy data for users_info*/
-INSERT INTO users_info( userid , email, dob) VALUES ('1', 'abisaunders@hotmail.com', '1992-03-29');
-INSERT INTO users_info( userid , email, dob) VALUES ('2', 'arielzucks@gmail.com', '1991-07-20');
-INSERT INTO users_info( userid , email, dob) VALUES ('3', 'kemzlow@live.com', '1992-03-09');
+INSERT INTO users_info( userid , email, dob) VALUES ('1', 'abisaunders@hotmail.com', '1987-03-29');
+INSERT INTO users_info( userid , email, dob) VALUES ('2', 'arielzucks@gmail.com', '1983-07-20');
+INSERT INTO users_info( userid , email, dob) VALUES ('3', 'kemzlow@live.com', '1980-03-09');
 INSERT INTO users_info( userid , email,  dob) VALUES ('4', 'swabyduncan@yahoo.com', '1990-04-29');
-INSERT INTO users_info( userid , email,  dob) VALUES ('5', 'meeksb@gmail.com', '1991-03-19');
+INSERT INTO users_info( userid , email,  dob) VALUES ('5', 'meeksb@gmail.com', '1978-03-19');
 INSERT INTO users_info( userid , email,  dob) VALUES ('6', 'gates_gab@hotmail.com', '1994-03-25');
 INSERT INTO users_info( userid , email,  dob) VALUES ('7', 'trump@live.com', '1995-12-26');
-INSERT INTO users_info( userid , email,  dob) VALUES ('8', 'stevens@yahoo.com', '1994-11-29');
-INSERT INTO users_info( userid , email,  dob) VALUES ('9', 'denmark@yahoo.com', '1993-07-15');
+INSERT INTO users_info( userid , email,  dob) VALUES ('8', 'stevens@yahoo.com', '1977-03-29');
+INSERT INTO users_info( userid , email,  dob) VALUES ('9', 'denmark@yahoo.com', '1990-07-15');
 INSERT INTO users_info( userid , email,  dob) VALUES ('10', 'lindo_megan@gmail.com', '1992-03-29');
 
 
