@@ -52,12 +52,12 @@ INSERT INTO profile( userid ,  user_status, profile_pic) VALUES ('9', 'work','im
 INSERT INTO profile( userid ,  user_status, profile_pic) VALUES ('10', 'over it','img10.jpg');
 
 /*dummy data for groups*/
-INSERT INTO groups( groupid,group_name) VALUES ('1', 'Started from the bottom');
-INSERT INTO groups( groupid,group_name) VALUES ('2', 'Rihanna Navy');
-INSERT INTO groups( groupid,group_name) VALUES ('3', 'Beeeeyyyhive');
-INSERT INTO groups( groupid,group_name) VALUES ('4', 'Underground');
-INSERT INTO groups( groupid,group_name) VALUES ('5', 'Cutters');
-INSERT INTO groups( groupid,group_name) VALUES ('6', 'Moving On');
+INSERT INTO groups( groupid,groupname) VALUES ('1', 'Started from the bottom');
+INSERT INTO groups( groupid,groupname) VALUES ('2', 'Rihanna Navy');
+INSERT INTO groups( groupid,groupname) VALUES ('3', 'Beeeeyyyhive');
+INSERT INTO groups( groupid,groupname) VALUES ('4', 'Underground');
+INSERT INTO groups( groupid,groupname) VALUES ('5', 'Cutters');
+INSERT INTO groups( groupid,groupname) VALUES ('6', 'Moving On');
 
 /*dummy data for comments */
 INSERT INTO comments( commentid,content, comment_likes) VALUES ('1', 'awesome thing','1');
