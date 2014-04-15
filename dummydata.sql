@@ -77,12 +77,12 @@ INSERT INTO comment_likes( commentid, userid ) VALUES ('6','1');
 
 
 /*dummy data for post*/
-INSERT INTO post( postid,title, post_type) VALUES ('1', 'child','image');
-INSERT INTO post( postid,title, post_type) VALUES ('2', 'ye','text');
-INSERT INTO post( postid,title, post_type) VALUES ('3', 'sumtimes','image');
-INSERT INTO post( postid,title, post_type) VALUES ('4', 'Some ...','text');
-INSERT INTO post( postid,title, post_type) VALUES ('5', 'lalalal','image');
-INSERT INTO post( postid,title, post_type) VALUES ('6', 'idk about that','image');
+INSERT INTO post( postid,title, text_body, post_type) VALUES ('1', 'child','image');
+INSERT INTO post( postid,title, text_body, post_type) VALUES ('2', 'ye','text');
+INSERT INTO post( postid,title, text_body, post_type) VALUES ('3', 'sumtimes','image');
+INSERT INTO post( postid,title, text_body, post_type) VALUES ('4', 'Some ...','text');
+INSERT INTO post( postid,title, text_body, post_type) VALUES ('5', 'lalalal','image');
+INSERT INTO post( postid,title, text_body, post_type) VALUES ('6', 'idk about that','image');
 
 /* dummy data for post likes */
 INSERT INTO post_likes( userid, postid) VALUES ('1','5');
@@ -93,12 +93,12 @@ INSERT INTO post_likes( userid, postid) VALUES ('3','2');
 INSERT INTO post_likes( userid, postid) VALUES ('6','3');
 
 /*dummy data for post_content*/
-INSERT INTO post_content( postid,image_path,text_body,post_like) VALUES ('1', 'Cut','stuff','5');
-INSERT INTO post_content( postid,image_path,text_body,post_like) VALUES ('2', 'Chill','ye','9');
-INSERT INTO post_content( postid,image_path,text_body,post_like) VALUES ('3', 'Curse','blah','10');
-INSERT INTO post_content( postid,image_path,text_body,post_like) VALUES ('4', 'Clap','yaa','13');
-INSERT INTO post_content( postid,image_path,text_body,post_like) VALUES ('5', 'php','lame','15');
-INSERT INTO post_content( postid,image_path,text_body,post_like) VALUES ('6', 'smiley','emonji','0');
+INSERT INTO post_content( postid,image_path,post_like) VALUES ('1', 'postpic/img01.jpg','5');
+INSERT INTO post_content( postid,image_path,post_like) VALUES ('2', 'postpic/img02.jpg','9');
+INSERT INTO post_content( postid,image_path,post_like) VALUES ('3', 'postpic/img03.jpg','10');
+INSERT INTO post_content( postid,image_path,post_like) VALUES ('4', 'postpic/img04.jpg','13');
+INSERT INTO post_content( postid,image_path,post_like) VALUES ('5', 'postpic/img05.jpg','15');
+INSERT INTO post_content( postid,image_path,post_like) VALUES ('6', 'postpic/img06.jpg','0');
 
 /*dummy data group_post*/
 INSERT INTO group_post( gpostid,title, g_post_type) VALUES ('1', 'child','image');
