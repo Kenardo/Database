@@ -28,7 +28,8 @@ include('query.php');
 				<p><?= $gpdatastore['g_post_type'] ?></p>
 				<p><?= $gpdatastore['g_image_path'] ?></p>
 				<p><?= $gpdatastore['text_body'] ?></p>
-				<p><?= $gpdatastore['gpost_like'] ?></p>
+				
+				<p><span class="glyphicon glyphicon-heart"></span><?= $gpdatastore['gpost_like'] ?></p>
 				</div>
 				<br />
 				<?php
@@ -54,7 +55,7 @@ include('query.php');
 				<p><?= $pdatastore['post_type'] ?></p>
 				<p><?= $pdatastore['image_path'] ?></p>
 				<p><?= $pdatastore['text_body'] ?></p>
-				<p><?= $pdatastore['post_like'] ?></p>
+				<p><span class="glyphicon glyphicon-heart"></span><?= $pdatastore['post_like'] ?></p>
 				</div>
 				<br />
 				<?php
