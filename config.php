@@ -1,4 +1,6 @@
 <?php
+	session_start();
+	
 	$con = mysql_connect('localhost','root',''); /*connects to the database */
 	mysql_select_db('aarkdb'); /* selects the mysql database named 'coursemgmtdb' */
 	
