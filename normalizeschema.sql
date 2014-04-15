@@ -163,6 +163,18 @@ foreign key (groupid) references groups(groupid) on update cascade on delete cas
 foreign key (gpostid) references group_post(gpostid) on update cascade on delete cascade
 );
 
+/* Triggers */
+Delimiter $$
+CREATE TRIGGER UpdateRegisterTable
+AFTER insert ON users
+FOR EACH ROW
+BEGIN
+insert into registration(userid,joindate) values
+(new.userid,CURDATE());
+END $$
+delimiter ;
+
+
 DELIMITER //
 CREATE PROCEDURE GetAge(IN ID integer)
 BEGIN
