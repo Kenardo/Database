@@ -21,7 +21,13 @@ while ($irow = mysql_fetch_array($iresult))
 }
 
 
-//echo "user_info";
-//$admin = "SELECT users.fname, user.lname FROM user JOIN friend_of ON  "
+echo "admin <br>";
+$admin = "SELECT fname, lname FROM users JOIN friend_of ON friend_of.friend = users.userid GROUP BY friend_of.friend_owner ";
+$aresult =  mysql_query($admin) or die("Query failed" . mysql_error());
+while($arow = mysql_fetch_array($aresult))
+{
+	echo $arow['fname']." ".$arow['lname'];
+	echo "<br>";
+}"
 
 ?>
