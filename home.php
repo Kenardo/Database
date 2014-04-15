@@ -40,7 +40,6 @@ include('query.php');
 			}
 		  ?>
           
-          <p><a class="btn btn-primary" href="#" role="button">Comment &raquo;</a></p>
         </div>
         <div class="col-lg-4">
           <h2>Post</h2>
@@ -70,7 +69,6 @@ include('query.php');
 				<?php
 			}
 		  ?>
-          <p><a class="btn btn-primary" href="#" role="button">Comment &raquo;</a></p>
        </div>
         <!-- <div class="col-lg-4">
           <h2>Heading</h2>
