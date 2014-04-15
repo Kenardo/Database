@@ -1,7 +1,7 @@
 /*dummy data for users*/
 /* INSERT INTO users(userid, fname ,  lname) VALUES ('1', 'Cooper', 'Abigail');
-INSERT INTO users(userid, fname ,  lname) VALUES ('2', 'Barrett', 'Ariel');
-INSERT INTO users(userid, fname ,  lname) VALUES ('3', 'Johnson',  'Kemar');
+INSERT INTO users(userid, fname ,  lname) VALUES ('2', );
+INSERT INTO users(userid, fname ,  lname) VALUES ('3', );
 INSERT INTO users(userid, fname ,  lname) VALUES ('4', 'Stewart', 'Ricardo');
 INSERT INTO users(userid, fname ,  lname) VALUES ('5', 'Wynter', 'Christoffe');
 INSERT INTO users(userid, fname ,  lname) VALUES ('6', 'Cooper', 'Duncan');
@@ -14,29 +14,29 @@ INSERT INTO users(userid, fname ,  lname) VALUES ('10','Trump', 'Donald'); */
 /* dummy data for users 
 password is md5('hello') = 5d41402abc4b2a76b9719d911017c592
 */
-INSERT INTO users(userid, reg_id, password) VALUES ('1','1','5d41402abc4b2a76b9719d911017c592');
-INSERT INTO users(userid, reg_id, password) VALUES ('2','2','5d41402abc4b2a76b9719d911017c592');
-INSERT INTO users(userid, reg_id, password) VALUES ('3','3','5d41402abc4b2a76b9719d911017c592');
-INSERT INTO users(userid, reg_id, password) VALUES ('4','4','5d41402abc4b2a76b9719d911017c592');
-INSERT INTO users(userid, reg_id, password) VALUES ('5','5','5d41402abc4b2a76b9719d911017c592');
-INSERT INTO users(userid, reg_id, password) VALUES ('6','6','5d41402abc4b2a76b9719d911017c592');
-INSERT INTO users(userid, reg_id, password) VALUES ('7','7','5d41402abc4b2a76b9719d911017c592');
-INSERT INTO users(userid, reg_id, password) VALUES ('8','8','5d41402abc4b2a76b9719d911017c592');
-INSERT INTO users(userid, reg_id, password) VALUES ('9','9','5d41402abc4b2a76b9719d911017c592');
-INSERT INTO users(userid, reg_id, password) VALUES ('10','10','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, fname, lname, password) VALUES ('1','Abigail','Saunders','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, fname, lname, password) VALUES ('2','Ariel', 'Zucks','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, fname, lname, password) VALUES ('3','Kemar',  'Lowes','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, fname, lname, password) VALUES ('4','Duncan','Swaby','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, fname, lname, password) VALUES ('5','Brian','Meeks','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, fname, lname, password) VALUES ('6','Gabrielle','Gates','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, fname, lname, password) VALUES ('7','Melinda','Trump','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, fname, lname, password) VALUES ('8','Jessica','Stevens','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, fname, lname, password) VALUES ('9','Anthony','Denmark','5d41402abc4b2a76b9719d911017c592');
+INSERT INTO users(userid, fname, lname, password) VALUES ('10','Megan','Lindo','5d41402abc4b2a76b9719d911017c592');
 
 
 /*dummy data for registration*/
-INSERT INTO registration(reg_id, userid ,  password) VALUES ('1','1', 'yup');
-INSERT INTO registration(reg_id, userid ,  password) VALUES ('2','2', 'something');
-INSERT INTO registration(reg_id, userid ,  password) VALUES ('3','3', 'password');
-INSERT INTO registration(reg_id, userid ,  password) VALUES ('4','4', 'yaaa');
-INSERT INTO registration(reg_id, userid ,  password) VALUES ('5','5', 'heller');
-INSERT INTO registration(reg_id, userid ,  password) VALUES ('6','6', 'bemine');
-INSERT INTO registration(reg_id, userid ,  password) VALUES ('7','7', 'hateyou');
-INSERT INTO registration(reg_id, userid ,  password) VALUES ('8','8', 'property');
-INSERT INTO registration(reg_id, userid ,  password) VALUES ('9','9', 'jail');
-INSERT INTO registration(reg_id, userid ,  password) VALUES ('10','10', 'mango');
+INSERT INTO registration(reg_id, userid ,  joindate) VALUES ('1','1', '2008-11-29');
+INSERT INTO registration(reg_id, userid ,  joindate) VALUES ('2','2', '2007-10-15');
+INSERT INTO registration(reg_id, userid ,  joindate) VALUES ('3','3', '2005-07-30');
+INSERT INTO registration(reg_id, userid ,  joindate) VALUES ('4','4', '2004-12-23');
+INSERT INTO registration(reg_id, userid ,  joindate) VALUES ('5','5', '2000-09-27');
+INSERT INTO registration(reg_id, userid ,  joindate) VALUES ('6','6', '2003-02-26');
+INSERT INTO registration(reg_id, userid ,  joindate) VALUES ('7','7', '2009-07-30');
+INSERT INTO registration(reg_id, userid ,  joindate) VALUES ('8','8', '2001-10-19');
+INSERT INTO registration(reg_id, userid ,  joindate) VALUES ('9','9', '2006-12-28');
+INSERT INTO registration(reg_id, userid ,  joindate) VALUES ('10','10', '2002-04-15');
 
 
 /*dummy data for users_info*/

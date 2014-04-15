@@ -15,14 +15,8 @@ primary key(userid)
 
 create table users_info(
 userid int,
+email varchar(128),
 dob date,
-primary key (userid),
-foreign key (userid) references users(userid) on update cascade on delete cascade
-);
-
-create table users_contact(
-userid int,
-email varchar(150),
 primary key (userid),
 foreign key (userid) references users(userid) on update cascade on delete cascade
 );
