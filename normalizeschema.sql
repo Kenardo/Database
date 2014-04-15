@@ -76,9 +76,11 @@ foreign key (postid) references post(postid) on update cascade on delete cascade
 
 create table group_post(
 gpostid int auto_increment not null,
+groupid int,
 title varchar(128),
 g_post_type varchar(50),
-primary key (gpostid)
+primary key (gpostid),
+foreign key (groupid) references groups(groupid) on update cascade on delete cascade
 );
 
 create table gpost_content(
