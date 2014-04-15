@@ -2,7 +2,7 @@
 
 
 $gpostsql = "SELECT gp.gpostid,title, g_post_type, g_image_path, text_body, gpost_like  from group_post AS gp JOIN gpost_content AS gpc ON gp.gpostid=gpc.gpostid";
-
+$postsql = "SELECT pc.postid,title, post_type, image_path, text_body, post_like  from post AS p JOIN post_content AS pc ON p.postid=pc.postid"; 
 /*
 $uid=1;
 $name = "SELECT fname, lname FROM users  WHERE userid='$uid'";
