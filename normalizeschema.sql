@@ -53,6 +53,7 @@ foreign key (commentid) references comments(commentid) on update cascade on dele
 create table post(
 postid int auto_increment not null,
 title varchar(128),
+text_body varchar(250),
 post_type varchar(50),
 primary key (postid)
 );
@@ -60,7 +61,6 @@ primary key (postid)
 create table post_likes(
 userid int,
 postid int,
-text_body varchar(250),
 primary key (userid, postid),
 foreign key (userid) references users(userid) on update cascade on delete cascade,
 foreign key (postid) references post(postid) on update cascade on delete cascade

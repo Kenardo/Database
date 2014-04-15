@@ -101,7 +101,7 @@ INSERT INTO post_content( postid,image_path,post_like) VALUES ('5', 'postpic/img
 INSERT INTO post_content( postid,image_path,post_like) VALUES ('6', 'postpic/img06.jpg','0');
 
 /*dummy data group_post*/
-INSERT INTO group_post( gpostid,title, text_body, g_post_type) VALUES ('1', 'Orange','The orange (specifically, the sweet orange) is the fruit of the citrus species','image');
+INSERT INTO group_post( groupid,title, text_body, g_post_type) VALUES ('1', 'Orange','The orange (specifically, the sweet orange) is the fruit of the citrus species','image');
 INSERT INTO group_post( gpostid,title, text_body, g_post_type) VALUES ('2', 'Ackee','The kaki, also known as achee, akee apple or akee (Blighia sapida) is a member of the Sapindaceae (soapberry family)','image');
 INSERT INTO group_post( gpostid,title, text_body, g_post_type) VALUES ('3', 'Banana','A banana is an edible fruit produced by several kinds of large herbaceous flowering plants in the genus Musa','image');
 INSERT INTO group_post( gpostid,title, text_body, g_post_type) VALUES ('4', 'Apple','The apple is the pomaceous fruit of the apple tree, species Malus domestica in the rose family (Rosaceae)','text');
@@ -109,12 +109,12 @@ INSERT INTO group_post( gpostid,title, text_body, g_post_type) VALUES ('5', 'Gra
 INSERT INTO group_post( gpostid,title, text_body, g_post_type) VALUES ('6', 'Passion','The Cherry is the fruit of many plants of the genus Prunus, and is a fleshy drupe (stone fruit). ','text');
 
 /*dummy data for gpost_content*/
-INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('1', 'Orange','5');
-INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('2' ,'ye','9');
-INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('3', 'blah','10');
-INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('4', 'yaa','13');
-INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('5', 'lame','15');
-INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('6', 'emonji','0');
+INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('1', 'gppic/img01.jpg','5');
+INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('2' ,'gppic/img02.jpg','9');
+INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('3', 'gppic/img03.jpg','10');
+INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('4', 'gppic/img04.jpg','13');
+INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('5', 'gppic/img05.jpg','15');
+INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('6', 'gppic/img06.jpg','0');
 
 /* dummy data for gpost likes */
 INSERT INTO gpost_likes (userid, gpostid) VALUES ('10','1');
