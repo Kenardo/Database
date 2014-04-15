@@ -1,5 +1,15 @@
 <?php
 include('header.html');
+$id = $_SESSION['userid'];
+$tempstat = mysql_query('SELECT user_status FROM profile where "'.$id.'"');
+$statdata = mysql_fetch_array($tempstat);
+$status = $statdata['user_status'];
+
+$temp = mysql_query("call GetAge('$id')");
+$agedata = mysql_fetch_array($temp);
+$agefloat = floatval($agedata['ageInYears']);
+$age = floor($agefloat);
+
 ?>
 
 	  
@@ -10,9 +20,9 @@ include('header.html');
 			  <h2>Personal Data</h2>
 				<table cellspacing="10" class="udata">
 					
-					<tr class="personaldata" ><td class="title">First Name: </td><td class="val">Kevin</td></tr>
-					<tr class="personaldata" ><td class="title">Last Name: </td><td class="val">Bacon</td></tr>
-					<tr class="personaldata"><td class="title">Age: </td><td class="val">40</td>
+					<tr class="personaldata" ><td class="title">First Name: </td><td class="val"><?= $_SESSION['fname'] ?></td></tr>
+					<tr class="personaldata" ><td class="title">Last Name: </td><td class="val"><?= $_SESSION['lname'] ?></td></tr>
+					<tr class="personaldata"><td class="title">Age: </td><td class="val"><?= $age ?></td>
 				</table>
 			  <br />
 			  <p><a class="btn btn-primary" href="#" role="button">Change &raquo;</a></p>
@@ -21,7 +31,9 @@ include('header.html');
 			  <h2>About me</h2>
 				<table cellspacing="10" class="udata">
 					
-					<tr class="personaldata" ><td class="title">Status: </td><td class="val">I am happy</td></tr>
+					<tr class="personaldata" ><td class="title">Status: </td><td class="val"><?= $status ?></td></tr>
+					<tr class="personaldata" ><td class="title">Email: </td><td class="val"><?= $_SESSION['email'] ?></td></tr>
+					<tr class="personaldata" ><td class="title">D.O.B: </td><td class="val"><?= $_SESSION['dob'] ?></td></tr>
 					
 				</table>
               <br />

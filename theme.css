@@ -4,6 +4,27 @@ html,body{
     height: 100%;
 }
 
+.masterdiv {
+	padding: 10px;
+	background-color: #80C5D2;
+	height: 100px;
+}
+
+.message {
+	font-size: 14pt;
+	color: blue;
+	
+}
+
+#title {
+	font-size: 35pt;
+	margin-left: 3%;
+	color: white;
+	font-family:Verdana;
+	font-weight: bold;
+	
+}
+
 #websitetitle {
 	
 }

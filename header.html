@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php 
+	include('config.php');
+	
+?>
 <html lang="en">
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="theme.css" rel="stylesheet">
@@ -10,16 +14,23 @@
 <div class="container">
 
     <?php
-		include('config.php');
-		$fullname = "Ric Stew";	
-
+			$uid = $_SESSION['userid'];
+			
+			$temp = mysql_query('SELECT profile_pic FROM profile where userid ="'.$uid.'"');
+			$imgdata = mysql_fetch_array($temp);
+			$_SESSION['profilepic'] = $imgdata['profile_pic'];
+			$fullname = $_SESSION['fname']." ".$_SESSION['lname'];
+			
+			$imgpath = 'profilepic/'.$_SESSION['profilepic'];
+	
 	?>
 	<h2 id= "websitetitle" class="text-muted">AARK book</h3>
 	<div class="jumbotron">
-		
-	    <img id="profilepic" src="profilepic/blank-person.png" />
-        <p id="uname"><?= $fullname ?></p>
-		<button type="button" id="logout" class="btn btn-default btn-lg">Logout</button>
+		<?php
+	    echo "<img id=\"profilepic\" src=\"$imgpath\" />";
+        ?>
+		<p id="uname"><?= $fullname ?></p>
+		<button onclick="location.href='logout.php'" type="button" id="logout" class="btn btn-default btn-lg"><a href="logout.php">Logout</a></button>
         
 	</div>
 		
