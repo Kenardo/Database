@@ -24,7 +24,7 @@ if(isset($_SESSION['userid']))
 ?>
 <div class="container">
 	<div class="message">You have successfully been loged out.<br />
-	<a href="login.html">Login</a></div>
+	<a class="btn btn-primary" href="login.html" role="button">Login</a></div>
 </div>
 <?php
 }
@@ -32,7 +32,7 @@ else
 {
 ?>
 <div class="container">
-	<p class="message">You are logged out. <a href="login.html">Click here to login</a></p>
+	<p class="message">You are logged out. Click here to <a class="btn btn-primary" href="login.html" role="button" > login</a></p>
 </div>
 <?php
 }

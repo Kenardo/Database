@@ -127,6 +127,16 @@ foreign key (userid) references users(userid) on update cascade on delete cascad
 foreign key (postid) references post(postid) on update cascade on delete cascade
 );
 
+create table comments_on_gpost(
+userid int,
+gpostid int,
+commentid int,
+date_commented date,
+primary key(userid, gpostid, commentid),
+foreign key(userid) references
+
+);
+
 create table add_editors_group(
 groupid int,
 userid int,
