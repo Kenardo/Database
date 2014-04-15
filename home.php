@@ -1,7 +1,7 @@
 <?php
 include('header.html');
+include('query.php');
 ?>
-
 
 <br />
 <br />
@@ -13,14 +13,34 @@ include('header.html');
       <div class="row">
         <div class="col-lg-4">
           <h2>Group Post</h2>
-          <p class="text-danger">As of v7.0.1, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.</p>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+		  <?php
+			$tempgpost = mysql_query($gpostsql);
+			//$gpdatastore = mysql_fetch_assoc($tempgpost);
+		
+			while ($gpdatastore = mysql_fetch_array($tempgpost))
+			{
+				//echo "<p><?$gpdatastore['title']
+				//echo $gpdatastore['title'];
+				?>
+				<div class="gppostmaster">
+				<div class="gpostbox">
+				<p id="gposttitle"> <?= $gpdatastore['title'] ?></p>
+				<p><?= $gpdatastore['g_post_type'] ?></p>
+				<p><?= $gpdatastore['g_image_path'] ?></p>
+				<p><?= $gpdatastore['text_body'] ?></p>
+				<p><?= $gpdatastore['gpost_like'] ?></p>
+				</div>
+				<br />
+				<?php
+			}
+		  ?>
+          
+          <p><a class="btn btn-primary" href="#" role="button">Comment &raquo;</a></p>
         </div>
         <div class="col-lg-4">
           <h2>Post</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-primary" href="#" role="button">Comment &raquo;</a></p>
        </div>
         <!-- <div class="col-lg-4">
           <h2>Heading</h2>

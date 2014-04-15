@@ -77,12 +77,12 @@ INSERT INTO comment_likes( commentid, userid ) VALUES ('6','1');
 
 
 /*dummy data for post*/
-INSERT INTO post( postid,title, text_body, post_type) VALUES ('1', 'child','image');
-INSERT INTO post( postid,title, text_body, post_type) VALUES ('2', 'ye','text');
-INSERT INTO post( postid,title, text_body, post_type) VALUES ('3', 'sumtimes','image');
-INSERT INTO post( postid,title, text_body, post_type) VALUES ('4', 'Some ...','text');
-INSERT INTO post( postid,title, text_body, post_type) VALUES ('5', 'lalalal','image');
-INSERT INTO post( postid,title, text_body, post_type) VALUES ('6', 'idk about that','image');
+INSERT INTO post( postid,title, text_body, post_type) VALUES ('1', 'Child Abuse', 'Child abuse consists of any act of commission or omission that endangers or impairs a child’s physical or emotional health and development. Child abuse includes any damage done to a child which cannot be reasonably explained and which is often represented by an injury or series of injuries appearing to be non-accidental in nature' ,'text');
+INSERT INTO post( postid,title, text_body, post_type) VALUES ('2', 'Love','Love refers to a variety of different feelings, states, and attitudes that ranges from interpersonal affection ("I love my mother") to pleasure ("I loved that meal")','text');
+INSERT INTO post( postid,title, text_body, post_type) VALUES ('3', 'Kevin Bacon','Photo: Kevin Bacon','image');
+INSERT INTO post( postid,title, text_body, post_type) VALUES ('4', 'Crysalids', 'Photo','image');
+INSERT INTO post( postid,title, text_body, post_type) VALUES ('5', 'Prison','A prison[2] or jail[3] is a facility in which individuals are forcibly confined and denied a variety of freedoms under the authority of the state','image');
+INSERT INTO post( postid,title, text_body, post_type) VALUES ('6', 'Rihanna', 'Photo: Rihanna','image');
 
 /* dummy data for post likes */
 INSERT INTO post_likes( userid, postid) VALUES ('1','5');
@@ -101,20 +101,20 @@ INSERT INTO post_content( postid,image_path,post_like) VALUES ('5', 'postpic/img
 INSERT INTO post_content( postid,image_path,post_like) VALUES ('6', 'postpic/img06.jpg','0');
 
 /*dummy data group_post*/
-INSERT INTO group_post( gpostid,title, g_post_type) VALUES ('1', 'child','image');
-INSERT INTO group_post( gpostid,title, g_post_type) VALUES ('2', 'ye','text');
-INSERT INTO group_post( gpostid,title, g_post_type) VALUES ('3', 'sumtimes','image');
-INSERT INTO group_post( gpostid,title, g_post_type) VALUES ('4', 'Some ...','text');
-INSERT INTO group_post( gpostid,title, g_post_type) VALUES ('5', 'lalalal','image');
-INSERT INTO group_post( gpostid,title, g_post_type) VALUES ('6', 'idk about that','image');
+INSERT INTO group_post( gpostid,title, text_body, g_post_type) VALUES ('1', 'Orange','The orange (specifically, the sweet orange) is the fruit of the citrus species','image');
+INSERT INTO group_post( gpostid,title, text_body, g_post_type) VALUES ('2', 'Ackee','The kaki, also known as achee, akee apple or akee (Blighia sapida) is a member of the Sapindaceae (soapberry family)','image');
+INSERT INTO group_post( gpostid,title, text_body, g_post_type) VALUES ('3', 'Banana','A banana is an edible fruit produced by several kinds of large herbaceous flowering plants in the genus Musa','image');
+INSERT INTO group_post( gpostid,title, text_body, g_post_type) VALUES ('4', 'Apple','The apple is the pomaceous fruit of the apple tree, species Malus domestica in the rose family (Rosaceae)','text');
+INSERT INTO group_post( gpostid,title, text_body, g_post_type) VALUES ('5', 'Grapefruit','The grapefruit (Citrus × paradisi) is a subtropical citrus tree known for its sour to semi-sweet fruit, an 18th-century hybrid first bred in Barbados.','text');
+INSERT INTO group_post( gpostid,title, text_body, g_post_type) VALUES ('6', 'Passion','The Cherry is the fruit of many plants of the genus Prunus, and is a fleshy drupe (stone fruit). ','text');
 
 /*dummy data for gpost_content*/
-INSERT INTO gpost_content( gpostid,text_body,gpost_like) VALUES ('1', 'stuff','5');
-INSERT INTO gpost_content( gpostid,text_body,gpost_like) VALUES ('2' ,'ye','9');
-INSERT INTO gpost_content( gpostid,text_body,gpost_like) VALUES ('3', 'blah','10');
-INSERT INTO gpost_content( gpostid,text_body,gpost_like) VALUES ('4', 'yaa','13');
-INSERT INTO gpost_content( gpostid,text_body,gpost_like) VALUES ('5', 'lame','15');
-INSERT INTO gpost_content( gpostid,text_body,gpost_like) VALUES ('6', 'emonji','0');
+INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('1', 'Orange','5');
+INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('2' ,'ye','9');
+INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('3', 'blah','10');
+INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('4', 'yaa','13');
+INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('5', 'lame','15');
+INSERT INTO gpost_content( gpostid, g_image_path, gpost_like) VALUES ('6', 'emonji','0');
 
 /* dummy data for gpost likes */
 INSERT INTO gpost_likes (userid, gpostid) VALUES ('10','1');
