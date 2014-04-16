@@ -22,7 +22,7 @@
 <div class="media">
 <?php
 	include('config.php');
-	include('query.php');
+	//include('query.php');
 ?>
 <br />
 <br />
@@ -33,20 +33,66 @@
       <div class="col-lg-4">
         <h2>Friends</h2>
         <?php
-          $tempfriendlst = mysql_query($friendsql);
+          $frdsql = "SELECT fname, lname from users WHERE userid IN (SELECT friend FROM friend_of WHERE friend_owner=2)";
+          $tempfriendlst = mysql_query($frdsql);
           //$gpdatastore = mysql_fetch_assoc($tempgpost);
           while ($userfrienddatastore = mysql_fetch_array($tempfriendlst))
           {
             ?>
       
             <div class="gpostbox">
-            <p id="gposttitle"><a href="#"> <?= $userfrienddatastore['fname'] ?> <?= $userfrienddatastore['lname'] ?></a>
+            <p id="gposttitle"> <?= $userfrienddatastore['fname'] ?> <?= $userfrienddatastore['lname'] ?>
             </div>
             <br />
             <?php
           }
           ?>
-  
+<br />
+<br />
+
+  <!-- Jumbotron -->
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-lg-4">
+        <h2>Posts</h2>
+        <?php
+          $uptsql = "SELECT title from post where postid in (SELECT postid FROM creates WHERE userid =2)";
+          $temppostlst = mysql_query($uptsql);
+          //$gpdatastore = mysql_fetch_assoc($tempgpost);
+          while ($userpostdatastore = mysql_fetch_array($temppostlst))
+          {
+            ?>
+      
+            <div class="gpostbox">
+            <p id="gposttitle"> <?= $userpostdatastore['title'] ?>
+            </div>
+            <br />
+            <?php
+          }
+          ?>
+<br />
+<br />
+
+  <!-- Jumbotron -->
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-lg-4">
+        <h2>Comments</h2>
+        <?php
+          $uctsql = "SELECT content from comments where commentid IN (SELECT commentid FROM comments_on WHERE userid=2)";
+          $tempctlst = mysql_query($uctsql);
+          //$gpdatastore = mysql_fetch_assoc($tempgpost);
+          while ($userctdatastore = mysql_fetch_array($tempctlst))
+          {
+            ?>
+      
+            <div class="gpostbox">
+            <p id="gposttitle"> <?= $userctdatastore['content'] ?>
+            </div>
+            <br />
+            <?php
+          }
+          ?>          
     
 
 </div>
