@@ -63,7 +63,6 @@ include('query.php');
 			
 				<div class="gpostbox">
 				<p id="gposttitle"> <?= $pdatastore['title'] ?></p>
-				<p><?= $pdatastore['post_type'] ?></p>
 				<?php
 					if(strlen($pdatastore['image_path']) == 0)
 					{
