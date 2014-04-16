@@ -2,7 +2,8 @@ create table registration(
 reg_id int auto_increment not null,
 userid int,
 joindate date,
-primary key (reg_id)
+primary key (reg_id),
+foreign key(userid) references users(userid) on update cascade on delete cascade
 );
 
 create table users(

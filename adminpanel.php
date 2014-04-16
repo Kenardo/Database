@@ -22,7 +22,7 @@
 <div class="media">
 <?php
 	include('config.php');
-	//include('query.php');
+	include('query.php');
 	?>
 	<br />
 	<br />
@@ -33,15 +33,18 @@
 			<div class="col-lg-4">
 				<h2>ALL Users</h2>
 				<?php
-					$allursql ="SELECT * FROM users";
-					$tempuser = mysql_query($allursql);
+					$tempuser = mysql_query($allusersql);
 					//$gpdatastore = mysql_fetch_assoc($tempgpost);
 					while ($userdatastore = mysql_fetch_array($tempuser))
 					{
 						$cuid = $userdatastore['userid'];
 						?>
+			
 						<div class="gpostbox">
-						<p id="gposttitle"><a href="result.php"> <?= $userdatastore['fname'] ?> <?= $userdatastore['lname'] ?> </a>
+						<?php
+						
+						echo "<p id=\"gposttitle\"><a href=\"result.php?userid=$cuid\"> <?= $userdatastore['fname'] ?> <?= $userdatastore['lname'] ?> </a></p>";
+						?>
 						</div>
 						<br />
 						<?php
