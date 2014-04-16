@@ -7,8 +7,14 @@ include('query.php');
 		$title = strtolower(stripslashes($_POST['ptitle']));
 		$content = strtolower(stripslashes($_POST['textbox']));
 		$ptype = 'text';
-		
-		if(mysql_query('INSERT INTO post (title, text_body, post_type) VALUES ("'.$title.'","'.$content.'","'.$ptype.'")'))
+		$temp = mysql_query('select max(postid) as maxpost from post');
+		$curpid = mysql_fetch_array($temp);
+
+		$newpostid = (int)$curpid['maxpost'];
+	
+		$newpostid++;
+	
+		if(mysql_query('INSERT INTO post (postid, title, text_body, post_type) VALUES ("'.$newpostid.'","'.$title.'","'.$content.'","'.$ptype.'")'))
 		{
 			?>
 			<div class="message">Post successfully saved<br />
@@ -50,6 +56,8 @@ include('query.php');
 			  {
 			  move_uploaded_file($_FILES["file"]["tmp_name"],
 			  "postpic/" . $_FILES["file"]["name"]);
+			  $fullpath = "postpic/" . $_FILES["file"]["name"];
+			  mysql_query('INSERT into post_content(postid, image_path, post_like) VALUES ("'.$newpostid.'","'.$fullpath.'",0)');
 				 echo "<p class=\"message\">Picture uploaded successfully</p>";
 			  //echo "Stored in: " . "postpic/" . $_FILES["file"]["name"];
 			  }
