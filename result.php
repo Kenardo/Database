@@ -23,6 +23,7 @@
 <?php
 	include('config.php');
 	//include('query.php');
+  $id = $_GET['userid'];
 ?>
 <br />
 <br />
@@ -33,7 +34,7 @@
       <div class="col-lg-4">
         <h2>Friends</h2>
         <?php
-          $frdsql = "SELECT fname, lname from users WHERE userid IN (SELECT friend FROM friend_of WHERE friend_owner=2)";
+          $frdsql = "SELECT fname, lname from users WHERE userid IN (SELECT friend FROM friend_of WHERE friend_owner= $id)";
           $tempfriendlst = mysql_query($frdsql);
           //$gpdatastore = mysql_fetch_assoc($tempgpost);
           while ($userfrienddatastore = mysql_fetch_array($tempfriendlst))
@@ -56,7 +57,7 @@
       <div class="col-lg-4">
         <h2>Posts</h2>
         <?php
-          $uptsql = "SELECT title from post where postid in (SELECT postid FROM creates WHERE userid =2)";
+          $uptsql = "SELECT title from post where postid in (SELECT postid FROM creates WHERE userid =$id)";
           $temppostlst = mysql_query($uptsql);
           //$gpdatastore = mysql_fetch_assoc($tempgpost);
           while ($userpostdatastore = mysql_fetch_array($temppostlst))
@@ -79,7 +80,7 @@
       <div class="col-lg-4">
         <h2>Comments</h2>
         <?php
-          $uctsql = "SELECT content from comments where commentid IN (SELECT commentid FROM comments_on WHERE userid=2)";
+          $uctsql = "SELECT content from comments where commentid IN (SELECT commentid FROM comments_on WHERE userid=$id)";
           $tempctlst = mysql_query($uctsql);
           //$gpdatastore = mysql_fetch_assoc($tempgpost);
           while ($userctdatastore = mysql_fetch_array($tempctlst))
