@@ -23,7 +23,7 @@
 <?php
 	include('config.php');
 	//include('query.php');
-  $id = $_GET['userid'];
+  $id = $_GET["id"];
 ?>
 <br />
 <br />
