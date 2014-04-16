@@ -23,32 +23,31 @@
 <?php
 	include('config.php');
 	include('query.php');
-	?>
-	<br />
-	<br />
+?>
+<br />
+<br />
 
-	<!-- Jumbotron -->
-		<!-- Example row of columns -->
-		<div class="row">
-			<div class="col-lg-4">
-				<h2>ALL Users</h2>
-				<?php
-					$tempuser = mysql_query($allusersql);
-					//$gpdatastore = mysql_fetch_assoc($tempgpost);
-					while ($userdatastore = mysql_fetch_array($tempuser))
-					{
-						$cuid = $userdatastore['userid'];
-						?>
-			
-						<div class="gpostbox">
-						<p id="gposttitle"><a href="result.php"> <?= $userdatastore['fname'] ?> <?= $userdatastore['lname'] ?> </a>
-						</div>
-						<br />
-						<?php
-					}
-		  		?>
-	
-		
+  <!-- Jumbotron -->
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-lg-4">
+        <h2>Friends</h2>
+        <?php
+          $tempfriendlst = mysql_query($friendsql);
+          //$gpdatastore = mysql_fetch_assoc($tempgpost);
+          while ($userfrienddatastore = mysql_fetch_array($tempfriendlst))
+          {
+            ?>
+      
+            <div class="gpostbox">
+            <p id="gposttitle"><a href="#"> <?= $userfrienddatastore['fname'] ?> <?= $userfrienddatastore['lname'] ?></a>
+            </div>
+            <br />
+            <?php
+          }
+          ?>
+  
+    
 
 </div>
 </body>
