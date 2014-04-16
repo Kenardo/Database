@@ -39,9 +39,15 @@
 					while ($userdatastore = mysql_fetch_array($tempuser))
 					{
 						$cuid = $userdatastore['userid'];
+						//echo $cuid;
+						//echo "<a href=\"result.php?id=$cuid\">test</a>";
 						?>
 						<div class="gpostbox">
-						<p id="gposttitle"><a href="result.php?id=$cuid"> <?= $userdatastore['fname'] ?> <?= $userdatastore['lname'] ?> </a>
+						<?php
+							$fname = $userdatastore['fname'];
+							$lname = $userdatastore['lname'];
+							echo "<p id=\"gposttitle\"><a href=\"result.php?id=$cuid\">$fname $lname</a>";
+						?>
 						</div>
 						<br />
 						<?php
