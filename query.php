@@ -5,6 +5,8 @@ $gpostsql = "SELECT gp.gpostid,title, g_post_type, g_image_path, text_body, gpos
 $postsql = "SELECT pc.postid,title, post_type, image_path, text_body, post_like  from post AS p JOIN post_content AS pc ON p.postid=pc.postid"; 
 $friendsql = 'SELECT fname, lname from users WHERE userid IN (SELECT friend FROM friend_of WHERE friend_owner="'.$_SESSION['userid'].'")';
 
+//INSERT commands
+$postinsertsql = 'INSERT INTO post (title, text_body, post_type) VALUES ("'.$title.'","'.$content.'","text")';
 
 //ADMIN
 $allfriendsql = 'SELECT fname, lname from users WHERE userid IN (SELECT friend FROM friend_of WHERE friend_owner= "'.$uid.'"")';
